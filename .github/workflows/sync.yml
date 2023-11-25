@@ -18,5 +18,5 @@ jobs:
     - name: Sync
       run: |
         git remote add upstream https://github.com/0-ROK/zzm-web.git
-        git pull --rebase upstream main
+        git pull upstream main --allow-unrelated-histories
         git push upstream main
