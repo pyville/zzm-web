@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Project `Zorzima!`
 
-## Getting Started
+공부할 때도, 운전할 때도 `졸지마!(Zorzima!)`!
+- `졸지마!(Zorzima!)`는 공부, 운전 등 업무를 할 때, 사용자가 조는 모습을 탐지하고 깨워주는 서비스입니다!
 
-First, run the development server:
+<br>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+-----
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Release Note
+- 2023.11.26. v0.0.1 웹 베타 버전 배포
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<br>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## TODO
+- FE/BE
+    - [ ] 로그인 미치 마이페이지
+    - [ ] 졸지 않고 집중한 시간 기록/통계/요약/캘린더 기능
+    - [ ] 영상 녹화 및 저장, 하이라이트(Vlog, 인스타 스토리 등) 기능
+    - [ ] 광고를 활용한 알람 기능
+    - [ ] 커뮤니티 기능
+- ML
+    - [ ] 이미지 대신 연속적인 비디오를 인풋으로 처리하기
+    - [ ] 특징 추출이후 딥러닝 모델/휴리스틱 설계
 
-## Learn More
+<br>
 
-To learn more about Next.js, take a look at the following resources:
+-----
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Members
+- 😺 이정주 (<i class="fa-brands fa-github"></i>[pyville](https://github.com/pyville))
+    - Team Leader, FE, App
+- 🦜 조영록(<i class="fa-brands fa-github"></i>[0-ROK](https://github.com/0-ROK))
+    - FE, BE, App
+- 🪽 윤현섭(<i class="fa-brands fa-github"></i>[PFSV](https://github.com/PFSV))
+    - ML, BE
+- 🐼 김성현(<i class="fa-brands fa-github"></i>[shkim-std](https://github.com/shkim-std))
+    - PM, QA
+- 🐔 원종빈(<i class="fa-brands fa-github"></i>[Jongbin-kr](https://github.com/Jongbin-kr))
+    - Others(a.k.a 짬처리)
