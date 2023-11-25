@@ -12,11 +12,10 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
       with:
+        token: ${{ secrets.FORKED_REPO_TOKEN }}
         ref: main
 
     - name: Push
       run: |
         git remote add target https://github.com/0-ROK/zzm-web.git
         git push target main:main
-      env:
-        FORKED_REPO_TOKEN: ${{ secrets.FORKED_REPO_TOKEN }}
