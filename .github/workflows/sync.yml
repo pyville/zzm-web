@@ -3,7 +3,7 @@ name: Sync Fork
 on:
   push:
     branches:
-      - main  # 원본 repository의 브랜치 이름
+      - main
 
 jobs:
   sync:
@@ -16,7 +16,7 @@ jobs:
 
     - name: Sync
       run: |
-        git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
+        git remote add upstream https://github.com/0-ROK/zzm-web.git
         git fetch upstream
         git merge upstream/main
         git push
