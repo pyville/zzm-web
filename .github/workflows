@@ -1,0 +1,22 @@
+name: Sync Fork
+
+on:
+  push:
+    branches:
+      - main  # 원본 repository의 브랜치 이름
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        ref: main
+
+    - name: Sync
+      run: |
+        git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
+        git fetch upstream
+        git merge upstream/main
+        git push
