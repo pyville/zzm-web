@@ -18,4 +18,5 @@ jobs:
     - name: Push
       run: |
         git remote add target https://github.com/0-ROK/zzm-web.git
+        git pull target main:main
         git push target main:main
