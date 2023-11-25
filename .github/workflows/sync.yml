@@ -1,4 +1,4 @@
-name: Sync Fork
+name: Push Commits
 
 on:
   push:
@@ -6,17 +6,17 @@ on:
       - main
 
 jobs:
-  sync:
+  push:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
       uses: actions/checkout@v2
       with:
-        token: ${{ secrets.FORKED_REPO_TOKEN }}
         ref: main
 
-    - name: Sync
+    - name: Push
       run: |
-        git remote add upstream https://github.com/0-ROK/zzm-web.git
-        git pull upstream main --allow-unrelated-histories
-        git push upstream main
+        git remote add target https://github.com/0-ROK/zzm-web.git
+        git push target main:main
+      env:
+        FORKED_REPO_TOKEN: ${{ secrets.FORKED_REPO_TOKEN }}
