@@ -77,7 +77,7 @@ const CamPage: NextPage = () => {
             <button className={styles.button} onClick={stopTimer}>끝내기</button>
         </div>
         <div className={styles.listContainer}>
-            {imageList.map((imageItem)=><div className={styles.listItem}>
+            {imageList.map((imageItem, index)=><div key={index} className={styles.listItem}>
                 <img src={imageItem} width="70px" height="70px"></img>
             </div>)}
         </div>
