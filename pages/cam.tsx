@@ -6,7 +6,7 @@ const CamPage: NextPage = () => {
     // 몇 초마다 문구가 바뀔지 설정
     const TITLE_SWITCH_SECONDS = 10
     // 최상단에 뜨는 문구 (특정 초마다 갱신)
-    const titleList = ["집중이 풀리는 당신에게, 졸지마!", "공부, 운전 등 집중해야 하는 당신!", "졸면 안 돼~ 졸면 안 돼~"]
+    const titleList = ["집중이 풀리는 당신에게, 졸지마!🔥", "공부, 운전 등 집중해야 하는 당신!", "졸면 안 돼~ 졸면 안 돼~"]
     // 이미지 리스트
     const [imageList, setImageList] = useState<any[]>([])
     // 소요시간 (초)
